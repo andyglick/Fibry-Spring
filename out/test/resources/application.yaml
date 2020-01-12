@@ -1,0 +1,7 @@
+fibry:
+  debug: true
+  exposedActors:
+    - testActorGet
+    - testActorPut
+    - testActorPost
+    - testActorSync
