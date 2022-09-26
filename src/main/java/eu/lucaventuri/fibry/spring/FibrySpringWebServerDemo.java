@@ -1,17 +1,19 @@
 package eu.lucaventuri.fibry.spring;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import eu.lucaventuri.common.Exceptions;
 import eu.lucaventuri.fibry.ActorSystem;
 import eu.lucaventuri.fibry.distributed.HttpChannel;
 import eu.lucaventuri.fibry.distributed.JacksonSerDeser;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.annotation.PostConstruct;
 import java.util.concurrent.ExecutionException;
 
+import javax.annotation.PostConstruct;
+
 @SpringBootApplication
-public class ManualTestFibrySpring {
+public class FibrySpringWebServerDemo {
     public static void main(String[] args) {
         SpringApplication.run(FibrySpringWebServerDemo.class, args);
     }
